@@ -1,0 +1,13 @@
+.container {
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #000;
+    opacity: 75%;
+    width: 100px;
+    height: 150px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

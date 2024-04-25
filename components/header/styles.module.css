@@ -11,8 +11,11 @@
 .logo {
     display: flex;
     align-items: center;
-    width: 6%;
-    height: auto;
+    gap: -8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FAFAFA;
+    letter-spacing: -1px;
 }
 
 .navigationMenu {
@@ -20,5 +23,5 @@
     gap: 48px;
     color: #fafafa;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
 }
