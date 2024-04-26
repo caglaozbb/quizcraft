@@ -1,14 +1,31 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Link from 'next/link';
-import { SlMagicWand } from "react-icons/sl";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 
 
 function Footer() {
     return (
         <footer className={styles.footer}>
-            Made with &nbsp;<SlMagicWand /> &nbsp;
-            by &nbsp;<Link href="https://github.com/caglaozbb" target="_blank">Cagla Ozbaba</Link>
+            <div>
+                <p>
+                    quizcraft
+                </p>
+            </div>
+            <div>
+                <ul className={styles.socialList}>
+                    <li>
+                        <a href='github.com'>
+                            <FaGithub />
+                        </a>
+                    </li>
+                    <li>
+                        <a href='github.com'>
+                            <FaTwitter />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     )
 }

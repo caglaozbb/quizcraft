@@ -1,11 +1,13 @@
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: rgb(200, 214, 229, 0.8);
 
 }
 
-.footer a {
-    text-decoration: underline;
+.socialList {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
 }
