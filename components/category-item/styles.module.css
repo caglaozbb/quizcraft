@@ -1,13 +1,16 @@
 .container {
-    border: 1px solid #fafafa;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(200, 214, 229);
+    border-radius: 4px;
     padding: 20px;
-    background-color: #000;
-    opacity: 75%;
     width: 100px;
-    height: 150px;
+    height: 100px;
     margin: 20px;
+    color: rgb(200, 214, 229);
+    font-weight: 700;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
+
 }

@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Link from 'next/link';
+import { SlMagicWand } from "react-icons/sl";
 
 
 function Footer() {
     return (
         <footer className={styles.footer}>
-            Made with ♥️ by &nbsp;<Link href="https://github.com/caglaozbb" target="_blank">Cagla Ozbaba</Link>
+            Made with &nbsp;<SlMagicWand /> &nbsp;
+            by &nbsp;<Link href="https://github.com/caglaozbb" target="_blank">Cagla Ozbaba</Link>
         </footer>
     )
 }

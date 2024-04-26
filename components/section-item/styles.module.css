@@ -1,16 +1,15 @@
-.category {
+.container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin-top: 25px;
+    width: 100vh;
+    margin: auto;
+
 }
 
-.selection {
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 400;
-    font-size: 50px;
-    margin-top: 100px;
 }

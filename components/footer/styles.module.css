@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(200, 214, 229, 0.8);
+
 }
 
 .footer a {

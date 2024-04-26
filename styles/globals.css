@@ -1,11 +1,8 @@
 body {
-  background-color: #2c2c54;
+  background-color: #141414;
   font-size: 16px;
-  color: #fafafa;
-  background-image: url('/background.jpg');
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: overlay;
+  color: rgb(200, 214, 229);
+
 }
 
 .container {

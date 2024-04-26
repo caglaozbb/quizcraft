@@ -14,14 +14,14 @@
     gap: -8px;
     font-size: 24px;
     font-weight: 700;
-    color: #FAFAFA;
+    color: rgb(200, 214, 229);
     letter-spacing: -1px;
 }
 
 .navigationMenu {
     display: flex;
     gap: 48px;
-    color: #fafafa;
+    color: rgb(200, 214, 229, 0.9);
     font-weight: 700;
     letter-spacing: -1px;
 }
