@@ -15,13 +15,13 @@ function Footer() {
             <div>
                 <ul className={styles.socialList}>
                     <li>
-                        <a href='github.com'>
-                            <FaGithub />
+                        <a href='https://github.com/caglaozbb'>
+                            <FaGithub size="20px" />
                         </a>
                     </li>
                     <li>
-                        <a href='github.com'>
-                            <FaTwitter />
+                        <a href='https://twitter.com/honglive'>
+                            <FaTwitter size="20px" />
                         </a>
                     </li>
                 </ul>

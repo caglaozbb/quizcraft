@@ -13,15 +13,15 @@
     align-items: center;
     gap: -8px;
     font-size: 24px;
-    font-weight: 700;
-    color: rgb(200, 214, 229);
+    font-weight: 600;
+    color: #fafafa;
     letter-spacing: -1px;
 }
 
 .navigationMenu {
     display: flex;
     gap: 48px;
-    color: rgb(200, 214, 229, 0.9);
+    color: #fafafa;
     font-weight: 700;
     letter-spacing: -1px;
 }

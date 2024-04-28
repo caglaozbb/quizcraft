@@ -9,7 +9,7 @@ import Footer from '../../components/footer';
 
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['400', '700']
+  weight: ['100', '400', '700']
 });
 
 
