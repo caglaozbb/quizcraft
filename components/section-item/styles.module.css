@@ -12,14 +12,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .sectionItemImageCol {
     flex-shrink: 0;
+    gap: 100px;
 }
 
 .info {
     font-size: 16px;
     align-items: start !important;
     padding-right: 100px;
+}
+
+.image {
+    width: auto;
 }

@@ -1,4 +1,19 @@
-.sectionList {}
+.sectionList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.infoWrapper {
+    padding-top: 50px;
+}
+
+.infoImage {
+    padding-right: 10px;
+}
 
 .info {
     display: flex;
@@ -64,4 +79,10 @@
     height: 50px;
     font-weight: 700;
     box-shadow: 0px 0px 10px 10px rgba(46, 204, 113, 0.1);
+}
+
+.button:hover {
+    background-color: #239e56;
+    color: #fafafa;
+    transition: ease-in-out 300ms;
 }

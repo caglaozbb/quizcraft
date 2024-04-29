@@ -16,7 +16,7 @@ function Header() {
                         width={80}
                         height={80}
                         className={styles.logo}
-                    />QUIZCRAFT</Link>
+                    />Quizcraft</Link>
 
                 <nav className={styles.navigationMenu}>
                     <Link href="//">Home</Link>
