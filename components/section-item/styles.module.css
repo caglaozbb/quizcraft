@@ -1,13 +1,12 @@
-.container {
+.sectionItem {
     display: flex;
     align-items: center;
-    width: 1280px;
     margin: auto;
     justify-content: space-between;
 }
 
 
-.container>div {
+.sectionItem>div {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -15,7 +14,12 @@
     align-items: center;
 }
 
+.sectionItemImageCol {
+    flex-shrink: 0;
+}
+
 .info {
     font-size: 16px;
     align-items: start !important;
+    padding-right: 100px;
 }

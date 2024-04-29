@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 function SectionItem({ imgsrc, title, subtitle }) {
     return (
-        <div className={styles.container}>
-            <div>
+        <div className={styles.sectionItem}>
+            <div className={styles.sectionItemImageCol}>
                 <Image src={imgsrc} alt="QuizCraft" width={400} height={400} className={styles.image} />
             </div>
             <div className={styles.info}>

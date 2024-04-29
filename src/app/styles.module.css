@@ -1,6 +1,4 @@
-.container {
-    padding: 30px;
-}
+.sectionList {}
 
 .info {
     display: flex;
@@ -41,11 +39,12 @@
     line-height: normal;
     color: #fafafa;
     background-color: transparent;
-    width: 50%;
     user-select: auto;
     font-size: 16px;
     padding: 0 6px;
     padding-left: 12px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .input:focus {

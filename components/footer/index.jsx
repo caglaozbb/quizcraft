@@ -6,7 +6,7 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} container`}>
             <div>
                 <p>
                     quizcraft

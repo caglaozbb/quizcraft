@@ -7,8 +7,8 @@ import styles from './styles.module.css';
 
 function Header() {
     return (
-        <header className={`${styles.header} container fluid`}>
-            <div className={styles.headerWrapper}>
+        <header className={`${styles.header} fluid`}>
+            <div className={`${styles.headerWrapper} container`}>
                 <Link href="//" className={styles.logo}>
                     <Image
                         src='/icon.png'

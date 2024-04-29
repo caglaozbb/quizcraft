@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     color: #fafafa;
+    padding: 30px 0;
 
 }
 
@@ -11,4 +12,5 @@
     gap: 10px;
     list-style-type: none;
     width: 100px;
+    justify-content: flex-end;
 }
