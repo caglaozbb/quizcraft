@@ -7,6 +7,7 @@ function Quiz() {
     return (
         <div>
             <QuestionStatus />
+
             <QuizNavigation />
         </div>
     )
