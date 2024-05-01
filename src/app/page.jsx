@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import SectionItem from "/components/section-item";
+import CreateForm from "/components/create-form";
 
 import styles from "./styles.module.css"
 export default function Home() {
@@ -17,9 +18,8 @@ export default function Home() {
             <p>Enter the topic you're curious about in the box below, click the 'Create Quiz' button, and start solving immediately!</p>
           </div>
 
-          <div className={styles.select}>
-            <input className={styles.input} type="text" placeholder="world war 2" />
-            <button className={styles.button} onClick=''>Create Quiz</button>
+          <div>
+            <CreateForm />
           </div>
         </div>
       </div>

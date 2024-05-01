@@ -1,0 +1,22 @@
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    height: 50px;
+    line-height: normal;
+    color: #fafafa;
+    background-color: transparent;
+    user-select: auto;
+    font-size: 16px;
+    padding: 0 6px;
+    padding-left: 12px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.input:focus {
+    outline: none;
+    background-color: transparent;
+}

@@ -1,0 +1,26 @@
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    gap: 30px;
+}
+
+.statusBar {
+    height: 15px;
+    width: 700px;
+    background-color: #eee;
+    opacity: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+}
+
+/* 
+.statusBar {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+
+} */
