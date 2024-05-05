@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from "./styles.module.css"
+import Button from "../button"
 
 
 function QuizNavigation() {
     return (
-        <div classname={styles.navigation} >
-            <button className={styles.skip}>Skip</button>
-            <button className={styles.next}>Next</button>
+        <div className={styles.navigation} >
+            <Button variant='danger'>Skip</Button>
+            <Button variant='secondary'>Next</Button>
         </div>
     )
 }

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import SectionItem from "/components/section-item";
 import CreateForm from "/components/create-form";
+import AccordionItem from "/components/accordion-item";
 
 import styles from "./styles.module.css"
 export default function Home() {
@@ -29,6 +30,11 @@ export default function Home() {
         <SectionItem imgsrc="/spellbookNew.png" title="Create Cheat Sheet" subtitle="Choose your field and level, and let our AI craft a customized cheat sheet for you. Download your cheat sheet in PDF format and accelerate your learning process." />
       </div>
 
+      <div className={styles.faqWrapper}>
+        <h1 className={styles.faqTitle}>FAQ</h1>
+        <AccordionItem title='What is QuizCraft?' content='QuizCraft is a platform that allows users to create magic-themed quizzes, turning their learning experience into a fun and interactive journey.'></AccordionItem>
+        <AccordionItem title='How can I create a quiz in QuizCraft?' content='To create a quiz, go to the main page, enter the topic you want to create a quiz for, and click on the "Create Quiz" button.'></AccordionItem>
+        <AccordionItem title='How does scoring work in QuizCraft?' content='In QuizCraft, each correct answer increases the users score, which is displayed on their profile. The highest scores are listed on the leaderboard.'></AccordionItem>    </div>
     </div>
   );
 }

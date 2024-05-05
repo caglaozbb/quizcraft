@@ -3,9 +3,9 @@ import styles from './styles.module.css'
 
 
 
-function Button() {
+function Button({ variant, children }) {
     return (
-        <button className={styles.button} onClick=''>Create Quiz</button>
+        <button className={styles[variant]} > {children}</button >
     )
 }
 

@@ -8,7 +8,7 @@ function CreateForm() {
     return (
         <div className={styles.select}>
             <Input></Input>
-            <Button></Button>
+            <Button variant="primary">Create Quiz</Button>
         </div>
     )
 }
