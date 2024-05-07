@@ -1,4 +1,6 @@
 import { Roboto } from 'next/font/google'
+import Head from 'next/head';
+
 
 import '../../styles/globals.css'
 import '../../styles/reset.css'
@@ -20,12 +22,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
-      <body>
-        <Header></Header>
-        <main className='contentWrapper'>{children}</main>
-        <Footer></Footer>
-      </body>
-    </html>
+    <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <html lang="en" className={roboto.className}>
+        <body>
+          <Header />
+          <main className='contentWrapper'>{children}</main>
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }
