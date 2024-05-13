@@ -13,6 +13,8 @@
 
 .infoImage {
     padding-right: 10px;
+    height: auto;
+
 }
 
 .info {
@@ -33,6 +35,10 @@
     font-weight: 100;
 }
 
+.info h1 {
+    text-align: center;
+}
+
 .faqWrapper {
     padding-bottom: 100px;
 }
@@ -43,4 +49,19 @@
     align-items: center;
     padding-top: 100px;
     padding-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .info p {
+        width: 100%;
+    }
+
+    .infoImage {
+        width: 400px;
+    }
+
+    .faqWrapper {
+        padding: 0 20px;
+    }
 }

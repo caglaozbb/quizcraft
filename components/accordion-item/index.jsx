@@ -17,7 +17,10 @@ function AccordionItem({ title, content }) {
             <div className={styles.accordionItem}
                 onClick={toggle}
             >
-                <div className={styles.accordionTitle}>{title}             {open ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                <div className={styles.accordionTitle}>
+
+                    <span>
+                        {title}     </span>        {open ? <IoIosArrowUp /> : <IoIosArrowDown />}
 
                 </div>
                 <div className={`${styles.accordionContent} ${open ? styles.show : styles.hide}`}>

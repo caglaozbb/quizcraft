@@ -29,3 +29,26 @@
 .image {
     width: auto;
 }
+
+@media (max-width: 768px) {
+    .sectionItem {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .sectionItem>div {
+        width: 100%;
+    }
+
+    .info {
+        padding-right: 0px;
+    }
+
+    .image {
+        width: 180px;
+    }
+
+    .sectionItemImageCol {
+        margin-bottom: 40px;
+    }
+}

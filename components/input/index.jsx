@@ -3,9 +3,9 @@ import styles from './styles.module.css'
 
 
 
-function Input() {
+function Input(props) {
     return (
-        <input className={styles.input} type="text" placeholder="world war 2" />
+        <input className={styles.input} type="text" placeholder="world war 2" {...props} />
     )
 }
 
