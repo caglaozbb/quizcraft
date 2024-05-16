@@ -3,9 +3,9 @@ import styles from './styles.module.css'
 
 
 
-function Button({ variant, children }) {
+function Button({ variant, children, ...props }) {
     return (
-        <button className={styles[variant]} > {children}</button >
+        <button className={styles[variant]} {...props}> {children}</button >
     )
 }
 

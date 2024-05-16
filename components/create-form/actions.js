@@ -1,10 +1,12 @@
+"use server";
+
 import { openai } from '@ai-sdk/openai';
 import { streamObject } from 'ai';
 import { z } from 'zod';
 import { createStreamableValue } from 'ai/rsc';
 
-export async function POST(req) {
-    const { messages } = await req.json();
+export async function generate(input) {
+
     const stream = createStreamableValue();
 
     (async () => {
@@ -18,8 +20,7 @@ export async function POST(req) {
                     answer: z.string().describe("Index of answer")
                 }))
             }),
-            messages,
-            system:
+            prompt:
                 "I help create quizzes for learners. " +
                 "Simply tell me your topic of interest, and I'll craft 2 challenging multiple-choice questions for you. " +
                 "Each question will have 4 options to choose from. " +
