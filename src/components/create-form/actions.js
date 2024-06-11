@@ -12,17 +12,17 @@ export async function generate(input) {
     (async () => {
 
         const { partialObjectStream } = await streamObject({
-            model: openai('gpt-4-turbo'),
+            model: openai('gpt-3.5-turbo'),
             schema: z.object({
                 questions: z.array(z.object({
                     text: z.string().describe("The question"),
                     options: z.array(z.string()).describe("Array of answers as strings"),
-                    answer: z.string().describe("Index of answer")
+                    answer: z.number().describe("the Index of answer")
                 }))
             }),
             prompt:
                 `I help create quizzes for learners. ` +
-                `Simply tell me your topic of interest, and I'll craft 2 challenging multiple-choice questions for you on the topic of "${input}". ` +
+                `Simply tell me your topic of interest, and I'll craft 5 challenging multiple-choice questions for you on the topic of "${input}". ` +
                 `Each question will have 4 options to choose from. ` +
                 `I'll provide you with a list of questions along with the correct answers list at the end. ` +
                 `I operate primarily in Turkish, but if you're learning a language, I can ask the questions in that language. ` +

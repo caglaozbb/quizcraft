@@ -6,8 +6,8 @@ import '../../styles/globals.css'
 import '../../styles/reset.css'
 
 
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 const roboto = Roboto({
   subsets: ['latin'],

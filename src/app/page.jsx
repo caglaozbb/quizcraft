@@ -5,9 +5,9 @@
 import React from "react";
 import Image from "next/image";
 
-import SectionItem from "/components/section-item";
-import CreateForm from "/components/create-form";
-import AccordionItem from "/components/accordion-item";
+import SectionItem from "@/components/section-item";
+import CreateForm from "@/components/create-form";
+import AccordionItem from "@/components/accordion-item";
 
 import styles from "./styles.module.css"
 export default function Home() {
