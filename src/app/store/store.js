@@ -6,6 +6,8 @@ const useQuestionStore = create((set) => ({
     setQuestions: (questions) => set({ questions }),
     currentQuestionIdx: 0,
     setCurrentQuestionIdx: (idx) => set({ currentQuestionIdx: idx }),
+    options: [],
+    setOptions: (options) => set({ options })
 }))
 
 export default useQuestionStore;

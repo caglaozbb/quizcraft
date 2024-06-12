@@ -11,29 +11,32 @@ function Question() {
         return
     }
 
+    console.log(questions[currentQuestionIdx].options);
+    // console.log(questions[currentQuestionIdx].options[0]);
+
     return (
         <div className={styles.questionWrapper}>
             <h2>Questions</h2>
             <div>Question Text:{questions[currentQuestionIdx].text}</div>
 
-            {/* {questions && questions.map((question, idx) => (
-                <div key={idx} className={styles.questionBlock}>
-                    <div>
-                        <strong>Question Text:</strong> {question.text}
-                    </div>
-                    <div>
-                        <strong>Question Options:</strong>
-                        <ul>
-                            {question.options && question.options.map((option, idx) => (
-                                <li key={idx}>{option}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Question Answer:</strong> {question.answer}
-                    </div>
-                </div>
-            ))} */}
+            <div className={styles.questionBlock}>
+                <ul>
+                    {questions[currentQuestionIdx].options && questions[currentQuestionIdx]?.options.map((option, index) => (
+                        <li key={index}>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="option"
+                                    value={index}
+                                // checked={selectedOption === option}
+                                // onChange={handleOptionChange}
+                                />
+                                {option}
+                            </label></li>
+                    ))}
+                </ul>
+
+            </div>
         </div>
     )
 }
