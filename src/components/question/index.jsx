@@ -2,17 +2,25 @@
 import React from "react";
 import styles from "./styles.module.css"
 import useQuestionStore from "../../app/store/store"
+import Button from "../button";
 
 function Question() {
     const questions = useQuestionStore((state) => state.questions);
     const currentQuestionIdx = useQuestionStore((state) => state.currentQuestionIdx);
+    const answers = useQuestionStore((state) => state.answers);
+    const addAnswer = useQuestionStore((state) => state.addAnswer);
 
     if (!questions[currentQuestionIdx]) {
         return
     }
 
-    console.log(questions[currentQuestionIdx].options);
-    // console.log(questions[currentQuestionIdx].options[0]);
+
+    const handleButtonClick = (value) => {
+        console.log(value);
+        addAnswer(currentQuestionIdx, value)
+    }
+    console.log(answers);
+
 
     return (
         <div className={styles.questionWrapper}>
@@ -23,19 +31,10 @@ function Question() {
                 <ul>
                     {questions[currentQuestionIdx].options && questions[currentQuestionIdx]?.options.map((option, index) => (
                         <li key={index}>
-                            <label>
-                                <input
-                                    type="radio"
-                                    name="option"
-                                    value={index}
-                                // checked={selectedOption === option}
-                                // onChange={handleOptionChange}
-                                />
-                                {option}
-                            </label></li>
+                            <Button value={index} variant="primary" onClick={() => handleButtonClick(index)}>{option}</Button>
+                        </li>
                     ))}
                 </ul>
-
             </div>
         </div>
     )
