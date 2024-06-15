@@ -16,22 +16,23 @@ function Question() {
 
 
     const handleButtonClick = (value) => {
-        console.log(value);
+        // console.log(value);
         addAnswer(currentQuestionIdx, value)
     }
     console.log(answers);
 
 
+
     return (
         <div className={styles.questionWrapper}>
-            <h2>Questions</h2>
-            <div>Question Text:{questions[currentQuestionIdx].text}</div>
+            <h2 className={styles.title}>Questions</h2>
+            <h3>{questions[currentQuestionIdx].text}</h3>
 
             <div className={styles.questionBlock}>
-                <ul>
+                <ul className={styles.ul}>
                     {questions[currentQuestionIdx].options && questions[currentQuestionIdx]?.options.map((option, index) => (
                         <li key={index}>
-                            <Button value={index} variant="primary" onClick={() => handleButtonClick(index)}>{option}</Button>
+                            <Button value={index} variant="question" onClick={() => handleButtonClick(index)}>{option}</Button>
                         </li>
                     ))}
                 </ul>

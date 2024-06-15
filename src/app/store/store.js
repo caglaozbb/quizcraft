@@ -1,4 +1,5 @@
-import { create } from 'zustand'
+import { create } from 'zustand';
+
 const useQuestionStore = create((set) => ({
     inputValue: '',
     setInputValue: (value) => set({ inputValue: value }),
@@ -6,6 +7,9 @@ const useQuestionStore = create((set) => ({
     setQuestions: (questions) => set({ questions }),
     currentQuestionIdx: 0,
     setCurrentQuestionIdx: (idx) => set({ currentQuestionIdx: idx }),
+    nextQuestion: () => set((state) => ({
+        currentQuestionIdx: state.currentQuestionIdx + 1,
+    })),
     options: [],
     setOptions: (options) => set({ options }),
     answers: {},
@@ -15,6 +19,6 @@ const useQuestionStore = create((set) => ({
             [questionIdx]: answer,
         },
     })),
-}))
+}));
 
 export default useQuestionStore;
