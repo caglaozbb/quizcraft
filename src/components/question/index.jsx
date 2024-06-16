@@ -25,18 +25,15 @@ function Question() {
 
     return (
         <div className={styles.questionWrapper}>
-            <h2 className={styles.title}>Questions</h2>
-            <h3>{questions[currentQuestionIdx].text}</h3>
-
-            <div className={styles.questionBlock}>
-                <ul className={styles.ul}>
-                    {questions[currentQuestionIdx].options && questions[currentQuestionIdx]?.options.map((option, index) => (
-                        <li key={index}>
-                            <Button value={index} variant="question" onClick={() => handleButtonClick(index)}>{option}</Button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            <h2 className={styles.title}>New Question</h2>
+            <h3 className={styles.question}>{questions[currentQuestionIdx].text}</h3>
+            <ul className={styles.optionsList}>
+                {questions[currentQuestionIdx].options && questions[currentQuestionIdx]?.options.map((option, index) => (
+                    <li key={index}>
+                        <Button value={index} variant="question" onClick={() => handleButtonClick(index)}>{option}</Button>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
