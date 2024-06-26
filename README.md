@@ -1,5 +1,5 @@
 # Quizcraft
-<p align="center">
+<p align="start">
   <img width="400" src="unnamed.png" />
 </p>
 
@@ -29,9 +29,10 @@ I've used following technologies:
 - Score Comparison: See your scores and compare them with others.
 - Custom Cheat Sheets: Create your own cheat sheets to help remember important information.
 
-<p align="center">
+<p align="start">
   <img width="400" src="unnamed2.png" />
 </p>
+
 ## Development
 
 You can run the app with the following commands:
