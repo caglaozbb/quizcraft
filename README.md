@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quizcraft
+<p align="center">
+  <img width="400" src="unnamed.png" />
+</p>
 
-## Getting Started
 
-First, run the development server:
+QuizCraft transforms learning into a captivating adventure, powered by artificial intelligence. It is designed for people of all ages, making learning easier and more fun with a wide variety of topics. With QuizCraft, you will enjoy learning in a fun and magical way.
 
+
+## Tech
+
+I've used following technologies:
+
+- Next.js
+- @ai-sdk/openai
+- Vercel AI SDK
+- Zustand
+- React Icons
+
+## Features
+
+- Dynamic Question Handling: Questions are managed through Zustand, allowing seamless state management.
+- Interactive Progress Bar: A visual representation of quiz progress that fills as questions are answered.
+- Real-time Answer Tracking: User answers are tracked and displayed on the results page.
+- Responsive Design: The application is designed to be responsive and user-friendly.
+
+## New Features Coming Soon
+
+- Score Comparison: See your scores and compare them with others.
+- Custom Cheat Sheets: Create your own cheat sheets to help remember important information.
+
+<p align="center">
+  <img width="400" src="unnamed2.png" />
+</p>
+## Development
+
+You can run the app with the following commands:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+// clone the repo
+pnpm install
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
