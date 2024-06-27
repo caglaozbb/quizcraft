@@ -65,3 +65,20 @@
     border: 2px solid #2ecc71;
 
 }
+
+.resultsNav {
+    color: #fafafafa;
+    border: 1px solid #239e56;
+    border-radius: 50px;
+    width: 150px;
+    height: 60px;
+    margin: 0 10px;
+    overflow: hidden
+}
+
+.resultsNav:hover {
+    border: 1px solid #239e56;
+    background-color: #239e5617;
+    color: #fafafa;
+    transition: ease-in-out 300ms;
+}

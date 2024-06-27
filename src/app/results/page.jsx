@@ -1,6 +1,11 @@
 'use client'
 import React from 'react';
 import useQuestionStore from '../../app/store/store';
+import Button from '@/components/button';
+import Image from 'next/image';
+import styles from "./styles.module.css"
+import Link from 'next/link';
+
 
 function Results() {
     const answers = useQuestionStore((state) => state.answers);
@@ -17,10 +22,18 @@ function Results() {
     };
 
     return (
-        <div>
-            <h2>Results</h2>
-            <p>{calculateScore()} out of {questions.length}</p>
-            <ul>
+        <div className={styles.resultsWrapper}>
+            <Image src="/icon.png" width={200} height={200} className={styles.imageResult}></Image>
+            <h2 className={styles.header}>Congarts! The quiz is done</h2>
+            <p className={styles.score}>{calculateScore()} / {questions.length}</p>
+            <div className={styles.navigate}>
+                <Link href="//"><Button variant='resultsNav'>Home</Button></Link>
+                <Link href="//"><Button variant='resultsNav'>Generate PDF</Button></Link>
+                <Link href="//"> <Button variant='resultsNav'>Generate Cheatsheet</Button></Link>
+                <Link href="//"><Button variant='resultsNav'>Share Score</Button></Link>
+            </div>
+
+            {/* <ul>
                 {questions.map((question, index) => (
                     <li key={index}>
                         <div>Question: {question.text}</div>
@@ -28,7 +41,7 @@ function Results() {
                         <div>Correct answer: {question.options[question.answer]}</div>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
         </div>
     );
 }

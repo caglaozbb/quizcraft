@@ -1,0 +1,24 @@
+.resultsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    font-size: larger;
+    font-weight: bold
+}
+
+.score {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.navigate {
+    display: flex;
+    margin-top: 50px;
+    font-size: medium;
+    font-weight: normal;
+}

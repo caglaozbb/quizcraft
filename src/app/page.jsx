@@ -1,7 +1,6 @@
 
-// 'use client';
+'use client'
 
-// import { useChat } from 'ai/react';
 import React from "react";
 import Image from "next/image";
 
