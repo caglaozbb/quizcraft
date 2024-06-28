@@ -4,6 +4,7 @@ import QuestionStatus from '@/components/question-status';
 import QuizNavigation from '@/components/quiz-navigation';
 import Question from '@/components/question'
 
+export const dynamic = 'force-dynamic'
 
 
 function Quiz() {

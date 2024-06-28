@@ -9,6 +9,10 @@ import CreateForm from "@/components/create-form";
 import AccordionItem from "@/components/accordion-item";
 
 import styles from "./styles.module.css"
+
+
+export const dynamic = 'force-dynamic'
+
 export default function Home() {
   return (
     <div>
