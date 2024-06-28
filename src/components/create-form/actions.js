@@ -5,6 +5,8 @@ import { streamObject } from 'ai';
 import { z } from 'zod';
 import { createStreamableValue } from 'ai/rsc';
 
+export const dynamic = 'force-dynamic'
+
 export async function generate(input) {
 
     const stream = createStreamableValue();
