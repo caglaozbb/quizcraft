@@ -4,6 +4,9 @@ import styles from "./styles.module.css"
 import useQuestionStore from "../../app/store/store"
 import Button from "../button";
 
+export const dynamic = 'force-dynamic'
+
+
 function Question() {
     const questions = useQuestionStore((state) => state.questions);
     const currentQuestionIdx = useQuestionStore((state) => state.currentQuestionIdx);

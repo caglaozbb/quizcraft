@@ -8,6 +8,8 @@ import { readStreamableValue } from 'ai/rsc';
 import { generate } from "./actions"
 import useQuestionStore from "../../app/store/store"
 
+export const dynamic = 'force-dynamic'
+
 function CreateForm() {
     const inputValue = useQuestionStore((state) => state.inputValue);
     const setInputValue = useQuestionStore((state) => state.setInputValue);

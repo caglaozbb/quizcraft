@@ -16,7 +16,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.infoWrapper}>
           <div className={styles.info}>
-            <Image src="/booknew.png" alt="QuizCraft" width={300} height={250} className={styles.infoImage} />
+            <Image src="/book.png" alt="QuizCraft" width={300} height={250} className={styles.infoImage} />
             <h1>Create Your Quiz</h1>
             <p>Enter the topic you&apos;re curious about in the box below, click the &apos;Create Quiz&apos; button, and start solving immediately!</p>
           </div>
