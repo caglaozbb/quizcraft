@@ -31,4 +31,8 @@
     .headerWrapper {
         flex-direction: column;
     }
+
+    .navigationMenu {
+        padding: 8px 0px
+    }
 }

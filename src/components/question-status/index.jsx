@@ -13,7 +13,6 @@ function QuestionStatus() {
 
     return (
         <div className={styles.status}>
-            <IoClose />
             <div className={styles.statusBar}>
                 <div className={styles.progress} style={{ width: progress }}></div>
             </div>

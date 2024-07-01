@@ -57,6 +57,10 @@
         width: 100%;
     }
 
+    .infoWrapper {
+        padding: 8px;
+    }
+
     .infoImage {
         width: 400px;
     }

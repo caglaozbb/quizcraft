@@ -22,3 +22,11 @@
     transition: width 0.5s ease-in-out;
     border-radius: 10px;
 }
+
+
+@media (max-width: 768px) {
+    .status {
+        padding: 0px 8px;
+
+    }
+}

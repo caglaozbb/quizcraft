@@ -7,8 +7,10 @@ import Link from 'next/link';
 import { readStreamableValue } from 'ai/rsc';
 import { generate } from "./actions"
 import useQuestionStore from "../../app/store/store"
+import { useRouter } from 'next/navigation';
 
 function CreateForm() {
+    const router = useRouter()
     const inputValue = useQuestionStore((state) => state.inputValue);
     const setInputValue = useQuestionStore((state) => state.setInputValue);
 
@@ -19,8 +21,11 @@ function CreateForm() {
     };
 
 
-    const handleButtonClick = async () => {
+    const handleButtonClick = async (e) => {
+        e.preventDefault()
         const { object } = await generate(inputValue);
+
+        router.push('/quiz/solve')
 
         for await (const partialObject of readStreamableValue(object)) {
             if (partialObject?.questions) {
@@ -31,13 +36,13 @@ function CreateForm() {
 
 
     return (
-        <div className={styles.select}>
+        <form className={styles.select} onSubmit={handleButtonClick}>
             <Input
                 placeholder="world war 2"
                 value={inputValue}
                 onChange={handleInputChange} />
-            <Link href="/quiz/zirt"><Button variant="primary" onClick={handleButtonClick} >Create Quiz</Button></Link>
-        </div>
+            <Button variant="primary" type='submit'>Create Quiz</Button>
+        </form>
     )
 }
 
