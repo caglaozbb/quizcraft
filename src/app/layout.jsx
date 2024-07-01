@@ -9,6 +9,7 @@ import '../../styles/reset.css'
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+export const runtime = "edge"
 const roboto = Roboto({
   subsets: ['latin'],
   weight: ['100', '400', '700']
