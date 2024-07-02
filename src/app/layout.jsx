@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Quizcraft" />
         <meta property="og:description" content="A Fun and Magical Learning Adventure" />
-        <meta property="og:image" content="/boiler.png" />
+        <meta property="og:image" content="https://www.quizcraft.quest/_next/image?url=%2Fwitch-hat.png&w=256&q=75" />
         <meta property="og:url" content="https://quizcraft.quest/" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
