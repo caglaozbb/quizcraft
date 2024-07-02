@@ -20,7 +20,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.infoWrapper}>
           <div className={styles.info}>
-            <Image src="/book.png" alt="QuizCraft" width={300} height={250} className={styles.infoImage} />
+            <Image src="/witch-hat.png" alt="QuizCraft" width={100} height={200} className={styles.infoImage} />
             <h1>Create Your Quiz</h1>
             <p>Enter the topic you&apos;re curious about in the box below, click the &apos;Create Quiz&apos; button, and start solving immediately!</p>
           </div>
@@ -32,8 +32,8 @@ export default function Home() {
       </div>
 
       <div className={`${styles.sectionList} container`}>
-        <SectionItem imgsrc="/boilerNew.png" title="Quiz Creation" subtitle="Enter a keyword to generate a custom 10-question quiz. Our AI will craft questions for you, and you can solve them immediately to test your knowledge. Enjoy a magical learning experience!" />
-        <SectionItem imgsrc="/spellbookNew.png" title="Discover & Learn" subtitle="Explore a wide range of topics and enhance your knowledge with our AI-generated quizzes. Each quiz is designed to challenge your understanding and help you learn in a fun, engaging way. Compare your scores with others and track your progress over time." />
+        <SectionItem imgsrc="/crystall-ball.png" title="Quiz Creation" subtitle="Enter a keyword to generate a custom 10-question quiz. Our AI will craft questions for you, and you can solve them immediately to test your knowledge. Enjoy a magical learning experience!" />
+        <SectionItem imgsrc="/third-eye.png" title="Discover & Learn" subtitle="Explore a wide range of topics and enhance your knowledge with our AI-generated quizzes. Each quiz is designed to challenge your understanding and help you learn in a fun, engaging way. Compare your scores with others and track your progress over time." />
       </div>
 
       <div className={styles.faqWrapper}>

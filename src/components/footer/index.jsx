@@ -20,7 +20,7 @@ function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href='https://twitter.com/honglive'>
+                        <a href='https://twitter.com/quizcraftapp'>
                             <FaTwitter size="20px" />
                         </a>
                     </li>

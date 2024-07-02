@@ -11,10 +11,10 @@ function Header() {
             <div className={`${styles.headerWrapper} container`}>
                 <Link href="//" className={styles.logo}>
                     <Image
-                        src='/icon.png'
+                        src='/witch-hat.png'
                         alt="QuizCraft"
-                        width={80}
-                        height={80}
+                        width={40}
+                        height={40}
                         className={styles.logo}
                     />Quizcraft</Link>
 
