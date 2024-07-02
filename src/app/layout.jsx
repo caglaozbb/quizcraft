@@ -28,7 +28,11 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.quizcraft.quest" />
+        <meta property="og:title" content="Quizcraft" />
+        <meta property="og:description" content="A Fun and Magical Learning Adventure" />
+        <meta property="og:image" content="https://www.quizcraft.quest/_next/image?url=%2Fwitch-hat.png&w=256&q=75" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Quizcraft" />
         <meta property="twitter:description" content="A Fun and Magical Learning Adventure" />
