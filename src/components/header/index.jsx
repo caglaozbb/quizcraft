@@ -20,7 +20,7 @@ function Header() {
 
                 <nav className={styles.navigationMenu}>
                     <Link href="//">Home</Link>
-                    <Link href="/cheatsheet">Cheat Sheet</Link>
+                    <Link href="/scoreboard">Scoreboard</Link>
                     <Link href="/about">About</Link>
                 </nav>
             </div>

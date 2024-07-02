@@ -1,0 +1,19 @@
+.scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.comingsoon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .scoreboard {
+        padding-top: 100px;
+    }
+}

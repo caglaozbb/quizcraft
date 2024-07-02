@@ -32,14 +32,14 @@ export default function Home() {
       </div>
 
       <div className={`${styles.sectionList} container`}>
-        <SectionItem imgsrc="/boilerNew.png" title="Create Quiz" subtitle="Choose your field and level, and let our AI craft a customized quiz and answer key for you. Test your knowledge with these magical quizzes and check your results immediately." />
-        <SectionItem imgsrc="/spellbookNew.png" title="Create Cheat Sheet" subtitle="Choose your field and level, and let our AI craft a customized cheat sheet for you. Download your cheat sheet in PDF format and accelerate your learning process." />
+        <SectionItem imgsrc="/boilerNew.png" title="Quiz Creation" subtitle="Enter a keyword to generate a custom 10-question quiz. Our AI will craft questions for you, and you can solve them immediately to test your knowledge. Enjoy a magical learning experience!" />
+        <SectionItem imgsrc="/spellbookNew.png" title="Discover & Learn" subtitle="Explore a wide range of topics and enhance your knowledge with our AI-generated quizzes. Each quiz is designed to challenge your understanding and help you learn in a fun, engaging way. Compare your scores with others and track your progress over time." />
       </div>
 
       <div className={styles.faqWrapper}>
         <h1 className={styles.faqTitle}>FAQ</h1>
-        <AccordionItem title='What is QuizCraft?' content='QuizCraft is a platform that allows users to create magic-themed quizzes, turning their learning experience into a fun and interactive journey.'></AccordionItem>
-        <AccordionItem title='How can I create a quiz in QuizCraft?' content='To create a quiz, go to the main page, enter the topic you want to create a quiz for, and click on the "Create Quiz" button.'></AccordionItem>
+        <AccordionItem title='What is QuizCraft?' content='QuizCraft is an innovative platform that uses artificial intelligence to generate personalized quizzes based on your chosen topics. It transforms learning into a fun and engaging experience.'></AccordionItem>
+        <AccordionItem title='How can I create a quiz in QuizCraft?' content='Creating a quiz in QuizCraft is simple. Just enter your desired topic keywords, and our AI will generate a customized quiz for you. Answer the questions and discover how fun learning can be with QuizCraft!'></AccordionItem>
         <AccordionItem title='How does scoring work in QuizCraft?' content='In QuizCraft, each correct answer increases the users score, which is displayed on their profile. The highest scores are listed on the leaderboard.'></AccordionItem>    </div>
     </div>
   );

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './styles.module.css'
 import Button from '../button';
 import Input from '../input';
@@ -10,6 +10,10 @@ import useQuestionStore from "../../app/store/store"
 import { useRouter } from 'next/navigation';
 
 function CreateForm() {
+
+    useEffect(() => {
+        console.log('zirt');
+    }, [])
     const router = useRouter()
     const inputValue = useQuestionStore((state) => state.inputValue);
     const setInputValue = useQuestionStore((state) => state.setInputValue);
