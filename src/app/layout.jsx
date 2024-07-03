@@ -33,6 +33,15 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'quizcraft',
+    description: 'A fun quiz app',
+    siteId: ' ',
+    creator: '@quizcraftapp',
+    creatorId: ' ',
+    images: ['https://www.quizcraft.quest/witch-hat.png'],
+  },
 }
 
 
