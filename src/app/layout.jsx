@@ -24,7 +24,7 @@ export const metadata = {
     siteName: 'Quizcraft',
     images: [
       {
-        url: 'https://www.quizcraft.quest/_next/image?url=%2Fwitch-hat.png&w=256&q=75', // Must be an absolute URL
+        url: 'https://www.quizcraft.quest/witch-hat.png',
         width: 800,
         height: 600,
       },
