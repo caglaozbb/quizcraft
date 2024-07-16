@@ -14,3 +14,15 @@
     width: 100px;
     justify-content: flex-end;
 }
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .socialList {
+        flex-direction: column;
+    }
+
+}

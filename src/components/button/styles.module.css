@@ -1,5 +1,5 @@
 .primary {
-    background-color: #2ecc71;
+    background-color: #b18cd8;
     color: #fafafa;
     border: none;
     text-align: center;
@@ -13,13 +13,13 @@
 }
 
 .primary:hover {
-    background-color: #239e56;
+    background-color: #b18cd8;
     color: #fafafa;
     transition: ease-in-out 300ms;
 }
 
 .secondary {
-    background-color: #239e56;
+    background-color: #b18cd8;
     color: #fafafa;
     border: none;
     border-radius: 5px;
@@ -28,7 +28,7 @@
 }
 
 .secondary:hover {
-    background-color: #2ecc71;
+    background-color: #b18cd8;
     color: #fafafa;
     transition: ease-in-out 300ms;
 }
@@ -68,7 +68,7 @@
 
 .resultsNav {
     color: #fafafafa;
-    border: 1px solid #239e56;
+    border: 1px solid #b18cd8;
     border-radius: 50px;
     width: 150px;
     height: 60px;
@@ -77,7 +77,7 @@
 }
 
 .resultsNav:hover {
-    border: 1px solid #239e56;
+    border: 1px solid #b18cd8;
     background-color: #239e5617;
     color: #fafafa;
     transition: ease-in-out 300ms;

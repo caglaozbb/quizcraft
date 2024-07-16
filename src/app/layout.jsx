@@ -16,10 +16,10 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'Quizcraft',
-  description: 'A fun quiz app',
+  description: 'A Fun and Magical Learning Adventure',
   openGraph: {
     title: 'Quizcraft',
-    description: 'A fun quiz app',
+    description: 'A Fun and Magical Learning Adventure',
     url: 'https://quizcraft.quest',
     siteName: 'Quizcraft',
     images: [
@@ -36,7 +36,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'quizcraft',
-    description: 'A fun quiz app',
+    description: 'A Fun and Magical Learning Adventure',
     siteId: ' ',
     creator: '@quizcraftapp',
     creatorId: ' ',

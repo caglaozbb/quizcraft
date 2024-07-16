@@ -22,3 +22,10 @@
     font-size: medium;
     font-weight: normal;
 }
+
+@media (max-width: 768px) {
+    .navigate {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -23,11 +23,11 @@ export async function generate(input) {
             }),
             prompt:
                 `I help create quizzes for learners. ` +
-                `Simply tell me your topic of interest, and I'll craft 10 challenging multiple-choice questions for you on the topic of "${input}". ` +
-                `Each question will have 4 options to choose from. ` +
+                `Simply tell me your topic of interest, and I'll craft 10 challenging multiple-choice quiz questions for you on the topic of "${input}". ` +
+                `output language: I operate primarily in English` +
+                `Each question must have 4 options to choose from. ` +
                 `I'll provide you with a list of questions along with the correct answers list at the end. ` +
-                `I operate primarily in Turkish, but if you're learning a language, I can ask the questions in that language. ` +
-                `If you don't specify the difficulty level of the questions, I will use an intermediate level as the default.`
+                `If you don't specify the difficulty level of the questions, I will  use an upper intermediate level as the default.`
         });
 
         for await (const partialObject of partialObjectStream) {

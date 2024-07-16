@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css'
 import Button from '../button';
 import Input from '../input';
@@ -11,9 +11,27 @@ import { useRouter } from 'next/navigation';
 
 function CreateForm() {
 
+    const placeholderArray = [
+        "Javascript",
+        "English for beginner",
+        "Math for 1st classes",
+    ];
+
+    const [placeholder, setPlaceholder] = useState(placeholderArray[0]);
+    const [index, setIndex] = useState(0);
+
     useEffect(() => {
-        console.log('zirt');
-    }, [])
+        const interval = setInterval(() => {
+            setIndex(prevIndex => {
+                const newIndex = (prevIndex + 1) % placeholderArray.length;
+                setPlaceholder(placeholderArray[newIndex]);
+                return newIndex;
+            });
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const router = useRouter()
     const inputValue = useQuestionStore((state) => state.inputValue);
     const setInputValue = useQuestionStore((state) => state.setInputValue);
@@ -39,10 +57,11 @@ function CreateForm() {
     };
 
 
+
     return (
         <form className={styles.select} onSubmit={handleButtonClick}>
             <Input
-                placeholder="world war 2"
+                placeholder={placeholder}
                 value={inputValue}
                 onChange={handleInputChange} />
             <Button variant="primary" type='submit'>Create Quiz</Button>

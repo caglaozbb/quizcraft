@@ -31,8 +31,7 @@ function Results() {
             <p className={styles.score}>{calculateScore()} / {questions.length}</p>
             <div className={styles.navigate}>
                 <Link href="//"><Button variant='resultsNav'>Home</Button></Link>
-                {/* <Link href="//"><Button variant='resultsNav'>Generate PDF</Button></Link>
-                <Link href="//"> <Button variant='resultsNav'>Generate Cheatsheet</Button></Link> */}
+                <Link href="/answers"><Button variant='resultsNav'>Answers</Button></Link>
                 <a target='_blank' href={`http://twitter.com/share?text=i solved a '${inputValue}' quiz from quizcraft and this is my score ${calculateScore()} / ${questions.length}` + '. ' + 'https://quizcraft.quest/'}><Button variant='resultsNav'>Share Score</Button></a>
             </div>
         </div>
