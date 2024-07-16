@@ -8,7 +8,8 @@
 }
 
 .infoWrapper {
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 
 .infoImage {
@@ -58,7 +59,7 @@
     }
 
     .infoWrapper {
-        padding: 8px;
+        padding: 50px 8px;
     }
 
     .infoImage {
