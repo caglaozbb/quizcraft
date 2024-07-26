@@ -9,7 +9,7 @@ function Footer() {
         <footer className={`${styles.footer} container`}>
             <div>
                 <p>
-                    quizcraft
+                    quizcraft.quest
                 </p>
             </div>
             <div>
