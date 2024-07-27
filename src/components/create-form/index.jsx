@@ -48,7 +48,7 @@ function CreateForm() {
     const handleButtonClick = async (e) => {
         e.preventDefault()
 
-        if(!isVerified) {
+        if (!isVerified) {
             alert("Please verify your turnstile");
             return;
         }
@@ -65,11 +65,11 @@ function CreateForm() {
     };
 
     const handleTurnstileSuccess = (token) => {
-        if(!token) return;
+        if (!token) return;
 
         setIsVerified(true);
     }
-    
+
 
 
     return (
@@ -79,12 +79,12 @@ function CreateForm() {
                 value={inputValue}
                 onChange={handleInputChange} />
 
-        <Turnstile
-            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
-            onSuccess={handleTurnstileSuccess}
-            options={{
-                size: "invisible"
-            }}
+            <Turnstile
+                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                onSuccess={handleTurnstileSuccess}
+                options={{
+                    size: "invisible"
+                }}
             />
             <Button variant="primary" type='submit' disabled={!isVerified}>Create Quiz</Button>
         </form>

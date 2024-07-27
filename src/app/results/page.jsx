@@ -12,8 +12,6 @@ function Results() {
     const questions = useQuestionStore((state) => state.questions);
     const inputValue = useQuestionStore((state) => state.inputValue)
 
-    console.log(inputValue);
-
     const calculateScore = () => {
         let score = 0;
         questions.forEach((question, index) => {

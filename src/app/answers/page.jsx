@@ -9,9 +9,6 @@ function Answers() {
     const inputValue = useQuestionStore((state) => state.inputValue)
     const currentQuestionIdx = useQuestionStore((state) => state.currentQuestionIdx);
 
-    console.log(inputValue);
-    console.log(questions);
-
     return (
         <div className={styles.resultsWrapper}>
             <h2 className={styles.header}>SEE YOUR ANSWERS</h2>

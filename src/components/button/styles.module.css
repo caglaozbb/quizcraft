@@ -12,6 +12,10 @@
     box-shadow: 0px 0px 10px 10px rgb(177, 140, 216, 0.1);
 }
 
+.primary:disabled {
+    opacity: 80%;
+}
+
 .primary:hover {
     background-color: #b18cd8;
     color: #fafafa;
