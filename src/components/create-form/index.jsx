@@ -8,8 +8,10 @@ import { readStreamableValue } from 'ai/rsc';
 import { generate } from "./actions"
 import useQuestionStore from "../../app/store/store"
 import { useRouter } from 'next/navigation';
+import { Turnstile } from '@marsidev/react-turnstile'
 
 function CreateForm() {
+    const [isVerified, setIsVerified] = useState(false);
 
     const placeholderArray = [
         "Javascript",
@@ -45,6 +47,12 @@ function CreateForm() {
 
     const handleButtonClick = async (e) => {
         e.preventDefault()
+
+        if(!isVerified) {
+            alert("Please verify your turnstile");
+            return;
+        }
+
         const { object } = await generate(inputValue);
 
         router.push('/quiz/solve')
@@ -56,6 +64,12 @@ function CreateForm() {
         }
     };
 
+    const handleTurnstileSuccess = (token) => {
+        if(!token) return;
+
+        setIsVerified(true);
+    }
+    
 
 
     return (
@@ -64,7 +78,15 @@ function CreateForm() {
                 placeholder={placeholder}
                 value={inputValue}
                 onChange={handleInputChange} />
-            <Button variant="primary" type='submit'>Create Quiz</Button>
+
+        <Turnstile
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+            onSuccess={handleTurnstileSuccess}
+            options={{
+                size: "invisible"
+            }}
+            />
+            <Button variant="primary" type='submit' disabled={!isVerified}>Create Quiz</Button>
         </form>
     )
 }

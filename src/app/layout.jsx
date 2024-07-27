@@ -24,7 +24,7 @@ export const metadata = {
     siteName: 'Quizcraft',
     images: [
       {
-        url: 'https://www.quizcraft.quest/witch-hat.png',
+        url: 'https://www.quizcraft.quest/og.png',
         width: 800,
         height: 600,
       },
@@ -40,7 +40,7 @@ export const metadata = {
     siteId: ' ',
     creator: '@quizcraftapp',
     creatorId: ' ',
-    images: ['https://www.quizcraft.quest/witch-hat.png'],
+    images: ['https://www.quizcraft.quest/og.png'],
   },
 }
 
