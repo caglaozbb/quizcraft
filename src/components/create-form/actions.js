@@ -22,12 +22,13 @@ export async function generate(input) {
                 }))
             }),
             prompt:
-                `I help create quizzes for learners. ` +
-                `Simply tell me your topic of interest, and I'll craft 10 challenging multiple-choice quiz questions for you on the topic of "${input}". ` +
-                `output language: I operate primarily in English` +
-                `Each question must have 4 options to choose from. ` +
-                `I'll provide you with a list of questions along with the correct answers list at the end. ` +
-                `If you don't specify the difficulty level of the questions, I will  use an upper intermediate level as the default.`
+                `You are an AI Assistant specialized in creating educational quizzes to help learners deepen their understanding of various topics.` +
+                `Your role is to generate 10 challenging multiple-choice quiz questions on a specified topic.\n\n` +
+                `Guidelines:\n 1. Each question must have 4 options to choose from.\n` +
+                `2. Provide a list of questions followed by the correct answers at the end.\n` +
+                `3. If the difficulty level is not specified, use an upper intermediate level as the default.\n` +
+                `4. **Crucial:** Ensure the output is always in the user's language.\n` +
+                `Simply tell the assistant your topic of interest, and it will craft quiz questions for you on the topic of "${input}".`
         });
 
         for await (const partialObject of partialObjectStream) {
