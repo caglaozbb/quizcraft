@@ -30,6 +30,7 @@ const difficultyOptions = [
     }
 ];
 
+
 function CreateForm() {
     const [isVerified, setIsVerified] = useState(false);
 
@@ -78,6 +79,7 @@ function CreateForm() {
             difficulty: difficulty
         });
 
+
         router.push('/quiz/solve')
 
         for await (const partialObject of readStreamableValue(object)) {
@@ -99,6 +101,7 @@ function CreateForm() {
 
 
 
+
     return (
         <form className={styles.select} onSubmit={handleButtonClick}>
             <div className={styles.inputContainer}>
@@ -116,6 +119,7 @@ function CreateForm() {
                     style={{ maxWidth: '100px' }}
                 />
             </div>
+
 
             <Turnstile
                 siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}

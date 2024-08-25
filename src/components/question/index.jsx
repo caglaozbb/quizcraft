@@ -17,12 +17,8 @@ function Question() {
 
 
     const handleButtonClick = (value) => {
-        // console.log(value);
         addAnswer(currentQuestionIdx, value)
     }
-    console.log(answers);
-
-
 
     return (
         <div className={styles.questionWrapper}>
