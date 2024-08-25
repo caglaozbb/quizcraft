@@ -6,3 +6,12 @@
     padding-top: 20px;
     gap: 20px;
 }
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}

@@ -5,8 +5,32 @@ import { streamObject } from 'ai';
 import { z } from 'zod';
 import { createStreamableValue } from 'ai/rsc';
 
+const DIFFICULTY_OPTIONS = {
+    0: "Easy",
+    1: "Medium",
+    2: "Hard",
+    3: "EXTRA HARD"
+}
 
-export async function generate(input) {
+
+export async function generate({
+    topic,
+    difficulty
+}) {
+
+    if (!topic) {
+        throw new Error("Topic is required");
+    }
+
+    if (!difficulty) {
+        throw new Error("Difficulty is required");
+    }
+
+    difficulty = parseInt(difficulty);
+
+    if (!DIFFICULTY_OPTIONS[difficulty]) {
+        throw new Error("Invalid difficulty");
+    }
 
     const stream = createStreamableValue();
 
@@ -21,12 +45,13 @@ export async function generate(input) {
                     answer: z.number().describe("the Index of answer")
                 }))
             }),
+            system: `I help create quizzes for learners.`,
             prompt:
-                `I help create quizzes for learners. ` +
-                `Simply tell me your topic of interest, and I'll craft 10 challenging multiple-choice quiz questions for you on the topic of "${input}". ` +
+                `You will prepare 10 challenging multiple-choice quiz questions for you on the topic of "${topic}". ` +
+                `Difficulty level of the questions will be ${DIFFICULTY_OPTIONS[difficulty]}. ` +
                 `output language: I operate primarily in English` +
                 `Each question must have 4 options to choose from. ` +
-                `I'll provide you with a list of questions along with the correct answers list at the end. ` +
+                `You will provide you with a list of questions along with the correct answers list at the end. ` +
                 `If you don't specify the difficulty level of the questions, I will  use an upper intermediate level as the default.`
         });
 
