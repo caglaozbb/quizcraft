@@ -9,16 +9,37 @@ import { generate } from "./actions"
 import useQuestionStore from "../../app/store/store"
 import { useRouter } from 'next/navigation';
 import { Turnstile } from '@marsidev/react-turnstile'
+import Select from '../select';
+
+
+const difficultyOptions = [
+    {
+        key: "0",
+        label: "Easy"
+    },
+    {
+        key: "1",
+        label: "Medium"
+    }, {
+        key: "2",
+        label: "Hard"
+    },
+    {
+        key: "3",
+        label: "EXTRA HARD"
+    }
+];
+
 
 function CreateForm() {
     const [isVerified, setIsVerified] = useState(false);
 
     const placeholderArray = [
         "Javascript",
-        "English for beginner",
-        "Math for 1st classes",
+        "English",
+        "Math for 1st elementary classes",
     ];
-
+    const [difficulty, setDifficulty] = useState(difficultyOptions[0].key);
     const [placeholder, setPlaceholder] = useState(placeholderArray[0]);
     const [index, setIndex] = useState(0);
 
@@ -53,7 +74,11 @@ function CreateForm() {
             return;
         }
 
-        const { object } = await generate(inputValue);
+        const { object } = await generate({
+            topic: inputValue,
+            difficulty: difficulty
+        });
+
 
         router.push('/quiz/solve')
 
@@ -70,14 +95,31 @@ function CreateForm() {
         setIsVerified(true);
     }
 
+    const handleDifficultyChange = (event) => {
+        setDifficulty(event.target.value);
+    }
+
+
 
 
     return (
         <form className={styles.select} onSubmit={handleButtonClick}>
-            <Input
-                placeholder={placeholder}
-                value={inputValue}
-                onChange={handleInputChange} />
+            <div className={styles.inputContainer}>
+                <Input
+                    placeholder={placeholder}
+                    value={inputValue}
+                    onChange={handleInputChange}
+                    style={{ maxWidth: '400px' }}
+                />
+
+                <Select
+                    options={difficultyOptions}
+                    onChange={handleDifficultyChange}
+                    value={difficulty}
+                    style={{ maxWidth: '100px' }}
+                />
+            </div>
+
 
             <Turnstile
                 siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}

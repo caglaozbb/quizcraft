@@ -1,0 +1,39 @@
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #b18cd8;
+  border-radius: 5px;
+  height: 50px;
+  line-height: normal;
+  color: #fafafa;
+  background-color: transparent;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;
+  width: 100%;
+  max-width: 600px;
+  appearance: none;
+  position: relative;
+}
+
+.select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid red;
+  display: inline-block;
+  z-index: 2;
+}
+
+.select:focus {
+  outline: none;
+  background-color: transparent;
+}
