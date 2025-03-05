@@ -10,7 +10,7 @@ export async function POST(req) {
     (async () => {
 
         const { partialObjectStream } = await streamObject({
-            model: openai('gpt-4-turbo'),
+            model: openai('gpt-3.5-turbo'),
             schema: z.object({
                 questions: z.array(z.object({
                     text: z.string().describe("The question"),
